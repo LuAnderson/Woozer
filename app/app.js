@@ -1,8 +1,16 @@
-'use strict';
+var app = angular.module('wooza', ['ngRoute']).config(
+    function ($routeProvider) {
 
-var app = angular.module("wooza", []);
+        $routeProvider
+            .when('/', {
+                templateUrl: './components/card-produtos/card-produtos.component.html',
+                controller: 'cardProdutos',
+                controllerAs: 'vm'
+            })
+    });
 
-app.controller("mainController", ["$scope", "$http", function ($scope, $http) {
+
+app.controller("cardProdutos", ["$scope", "$http", function ($scope, $http) {
     $http({
         method: 'GET',
         url: 'http://private-59658d-celulardireto2017.apiary-mock.com/plataformas'

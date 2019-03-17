@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="wooza">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,19 +13,15 @@
     <link rel="stylesheet" href="../dist/main.css">
 
     <script src="lib/angular/angular.min.js"></script>
-    <script src="app.module.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+
+    <script src="app.js"></script>
 
 </head>
 
-<body ng-controller="mainController">
+<body ng-app='wooza'>
 
-    <section class="produtos">
-        <div class="produto" ng-repeat="produto in produtos.plataformas">
-            <p class="informacao">{{ produto.sku }}</p>
-            <p class="informacao">{{ produto.nome }}</p>
-            <p class="informacao">{{ produto.descricao }}</p>
-        </div>
-    </section>
+    <ng-view></ng-view>
 
 </body>
 
