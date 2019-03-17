@@ -14,15 +14,16 @@
 
 </head>
 
-<body ng-controller="getjson">
+<body ng-controller="mainController">
 
-    <div>
-        <pre>
-            <div ng-bind="data | json"></div>
-        </pre>
-    </div>
+    <section class="produtos">
+        <div class="produto" ng-repeat="produto in produtos.plataformas">
+            <p>{{ produto.sku }}</p>
+            <p>{{ produto.nome }}</p>
+            <p>{{ produto.descricao }}</p>
+        </div>
+    </section>
 
 </body>
 
 </html>
-
