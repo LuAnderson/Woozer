@@ -39,6 +39,7 @@ app.controller("cardProdutos", ["$scope", "$http", function ($scope, $http) {
     });
 }]);
 
+//diferent
 app.controller("tabletProdutos", ["$scope", "$http", function ($scope, $http) {
     $http({
         method: 'GET',
@@ -57,7 +58,7 @@ app.controller("computadorProdutos", ["$scope", "$http", function ($scope, $http
         url: 'http://private-59658d-celulardireto2017.apiary-mock.com/planos/CPT02'
     }).then(function (response) {
         console.log("(computadorProdutos) Resposta Obtida:", response.status, "retornando as seguintes informações: ", response.data);
-        $scope.produtos = response.data;
+        $scope.produto = response.data;
     }, function (error) {
         console.log("Não foi possível conectar com a API, erro: ", error);
     });
@@ -69,7 +70,7 @@ app.controller("wifiProdutos", ["$scope", "$http", function ($scope, $http) {
         url: 'http://private-59658d-celulardireto2017.apiary-mock.com/planos/WF03'
     }).then(function (response) {
         console.log("(wifiProdutos) Resposta Obtida:", response.status, "retornando as seguintes informações: ", response.data);
-        $scope.produtos = response.data;
+        $scope.produto = response.data;
     }, function (error) {
         console.log("Não foi possível conectar com a API, erro: ", error);
     });

@@ -1,1 +1,11 @@
-oi
+<section class="produtos">
+    <div class="plano" ng-repeat="plano in produto.planos">
+        <p class="informacao">{{ plano.aparelho.nome }}</p>
+        <p class="informacao">{{ plano.aparelho.numeroParcelas }}</p>
+        <p class="informacao">{{ plano.aparelho.valor }}</p>
+        <p class="informacao">{{ plano.aparelho.valorParcela }}</p>
+        <p class="informacao">{{ plano.franquia }}</p>
+        <p class="informacao">{{ plano.sku }}</p>
+        <p class="informacao">{{ plano.valor }}</p>
+    </div>
+</section>
