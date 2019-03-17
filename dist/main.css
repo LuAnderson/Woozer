@@ -1,1 +1,1 @@
-body p{font-weight:bolder}
+body{background-color:#f9f9fa;display:grid;min-height:100vh;padding:0 20px;place-content:center}.produtos{display:grid;grid-template-columns:auto auto auto;grid-gap:1rem}.produtos .produto{background-color:#fff;border-radius:.25rem;box-shadow:0 2px 4px #2d313880}.produtos .produto .informacao{padding:1rem;text-align:center}

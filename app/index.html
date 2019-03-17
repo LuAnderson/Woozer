@@ -8,7 +8,7 @@
     <title>Desafio Wooza</title>
 
     <link rel="stylesheet" href="reset.css">
-    
+
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="../dist/main.css">
 
@@ -21,9 +21,9 @@
 
     <section class="produtos">
         <div class="produto" ng-repeat="produto in produtos.plataformas">
-            <p>{{ produto.sku }}</p>
-            <p>{{ produto.nome }}</p>
-            <p>{{ produto.descricao }}</p>
+            <p class="informacao">{{ produto.sku }}</p>
+            <p class="informacao">{{ produto.nome }}</p>
+            <p class="informacao">{{ produto.descricao }}</p>
         </div>
     </section>
 
