@@ -1,11 +1,13 @@
-<section class="produtos">
-    <div class="plano" ng-repeat="plano in produto.planos">
-        <p class="informacao">{{ plano.aparelho.nome }}</p>
-        <p class="informacao">{{ plano.aparelho.numeroParcelas }}</p>
-        <p class="informacao">{{ plano.aparelho.valor }}</p>
-        <p class="informacao">{{ plano.aparelho.valorParcela }}</p>
-        <p class="informacao">{{ plano.franquia }}</p>
-        <p class="informacao">{{ plano.sku }}</p>
-        <p class="informacao">{{ plano.valor }}</p>
+<div class="produtos">
+    <div class="planos" ng-repeat="plano in produto.planos">
+        <h3>{{ plano.aparelho.nome }}</h3>
+        <p class="price">R${{ plano.aparelho.valor }}</p>
+        <p>
+            Parcelamento em até {{ plano.aparelho.numeroParcelas }}x de {{ plano.aparelho.valorParcela }}
+        </p>
+        <p>
+            Pacote com {{ plano.franquia }} no valor de R$ {{ plano.valor }}
+        </p>
+        <button>Comprar</button>
     </div>
-</section>
+</div>

@@ -8,10 +8,50 @@
         background-color: #fff;
         border-radius: 0.25rem;
         box-shadow: 0 2px 4px #2d313880;
+        cursor: pointer;
     
         .informacao {
             padding: 1rem;
             text-align: center;
+        }
+    }
+}
+
+.planos {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-family: arial;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+
+    h3{
+        margin-top: 10px;
+        font-size: 2em;
+    }
+
+    p{
+        padding: 10px;
+
+        &.price {
+            color: grey;
+            font-size: 22px;
+        }
+    }
+
+    button {
+        border: none;
+        outline: 0;
+        padding: 1em;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+
+        &:hover {
+            opacity: 0.7;
         }
     }
 }
