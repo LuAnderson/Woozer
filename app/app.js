@@ -131,7 +131,7 @@ app.factory('Tablet', function ($http) {
 })
 
 app.factory('Computador', function ($http) {
-    var wifiList;
+    var computadorList;
     var obj = {};
 
     obj = {
