@@ -1,35 +1,37 @@
-var app = angular.module('wooza', ['ngRoute']).config(
-    function ($routeProvider) {
+'use strict';
 
-        $routeProvider
-            .when('/', {
-                templateUrl: './components/card-produtos/card-produtos.component.html',
-                controller: 'cardProdutos',
-                controllerAs: 'vm'
-            })
-            .when('/tablet', {
-                templateUrl: './components/card-tablet/card-tablet.component.html',
-                controller: 'tabletProdutos',
-                controllerAs: 'vm'
-            })
-            .when('/computador', {
-                templateUrl: './components/planos/planos.component.html',
-                controller: 'computadorProdutos',
-                controllerAs: 'vm'
-            })
-            .when('/wifi', {
-                templateUrl: './components/planos/planos.component.html',
-                controller: 'wifiProdutos',
-                controllerAs: 'vm'
-            })
-            .when('/formulario/:id', {
-                templateUrl: './components/formulario/formulario.component.html',
-                controller: 'formUser',
-                controllerAs: 'vm'
-            }).otherwise({
-                redirectTo: '/'
-            });
-    });
+var app = angular
+    .module('wooza', ['ngRoute']).config(
+        function ($routeProvider) {
+
+            $routeProvider
+                .when('/', {
+                    templateUrl: './components/card-produtos/card-produtos.component.html',
+                    controller: 'cardProdutos',
+                    controllerAs: 'vm'
+                })
+                .when('/TBT01', {
+                    templateUrl: './components/card-tablet/card-tablet.component.html',
+                    controller: 'tabletProdutos',
+                    controllerAs: 'vm'
+                })
+                .when('/CPT02', {
+                    templateUrl: './components/planos/planos.component.html',
+                    controller: 'computadorProdutos',
+                    controllerAs: 'vm'
+                })
+                .when('/WF03', {
+                    templateUrl: './components/planos/planos.component.html',
+                    controller: 'wifiProdutos',
+                    controllerAs: 'vm'
+                })
+                .when('/formulario/:id', {
+                    templateUrl: './components/formulario/formulario.component.html',
+                    controller: 'formUser',
+                    controllerAs: 'vm'
+                })
+                .otherwise({ redirectTo: '/' });
+        });
 
 
 app.controller("cardProdutos", ["$scope", "$http", function ($scope, $http) {
@@ -81,8 +83,7 @@ app.controller("wifiProdutos", ["$scope", "$http", function ($scope, $http) {
 }]);
 
 app.controller('formUser', function ($scope) {
-    $scope.master = {};
-    $scope.send = function () { 
+    $scope.send = function () {
         console.log("$scope.userInfo: ", $scope.userInfo);
     };
 });
