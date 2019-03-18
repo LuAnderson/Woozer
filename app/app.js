@@ -8,7 +8,7 @@ var app = angular.module('wooza', ['ngRoute']).config(
                 controllerAs: 'vm'
             })
             .when('/tablet', {
-                templateUrl: './components/planos/planos.component.html',
+                templateUrl: './components/card-tablet/card-tablet.component.html',
                 controller: 'tabletProdutos',
                 controllerAs: 'vm'
             })
@@ -44,7 +44,6 @@ app.controller("cardProdutos", ["$scope", "$http", function ($scope, $http) {
     });
 }]);
 
-//diferent
 app.controller("tabletProdutos", ["$scope", "$http", function ($scope, $http) {
     $http({
         method: 'GET',
