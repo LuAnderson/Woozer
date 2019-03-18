@@ -30,7 +30,7 @@ var app = angular
                     controller: 'formUser',
                     controllerAs: 'vm'
                 })
-                .otherwise({ redirectTo: '/' });
+                .otherwise({ redirectTo: '/' }); 
         });
 
 
@@ -83,7 +83,7 @@ app.controller("wifiProdutos", ["$scope", "$http", function ($scope, $http) {
 }]);
 
 app.controller('formUser', function ($scope) {
-    $scope.send = function () {
+    $scope.sendForm = function () {
         console.log("$scope.userInfo: ", $scope.userInfo);
     };
 });
