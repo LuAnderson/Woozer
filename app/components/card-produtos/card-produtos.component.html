@@ -1,7 +1,9 @@
-<section class="produtos">
-    <div class="produto" ng-repeat="produto in produtos.plataformas">
-        <p class="informacao">{{ produto.sku }}</p>
-        <p class="informacao">{{ produto.nome }}</p>
-        <p class="informacao">{{ produto.descricao }}</p>
-    </div>
+<section class="cardProdutos">
+    <a href="#!">
+        <div class="produto" ng-repeat="produto in produtos.plataformas">
+            <p class="informacao">{{ produto.sku }}</p>
+            <p class="informacao">{{ produto.nome }}</p>
+            <p class="informacao">{{ produto.descricao }}</p>
+        </div>
+    </a>
 </section>
