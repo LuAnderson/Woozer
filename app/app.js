@@ -21,6 +21,10 @@ var app = angular.module('wooza', ['ngRoute']).config(
                 templateUrl: './components/planos/planos.component.html',
                 controller: 'wifiProdutos',
                 controllerAs: 'vm'
+            }).when('/formulario', {
+                templateUrl: './components/formulario/formulario.component.html',
+                controller: 'formUser',
+                controllerAs: 'vm'
             }).otherwise({
                 redirectTo: '/'
             });
@@ -75,3 +79,10 @@ app.controller("wifiProdutos", ["$scope", "$http", function ($scope, $http) {
         console.log("Não foi possível conectar com a API, erro: ", error);
     });
 }]);
+
+app.controller('formUser', function ($scope) {
+    $scope.master = {};
+    $scope.send = function () { 
+        console.log("$scope.userInfo: ", $scope.userInfo);
+    };
+});

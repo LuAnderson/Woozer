@@ -1,0 +1,24 @@
+<div class="formulario">
+    <form>
+        <label for="name">Nome</label>
+        <input type="text" ng-model="userInfo.name" placeholder="Informe seu nome" required>
+
+        <label for="name">E-mail</label>
+        <input type="email" ng-model="userInfo.email" placeholder="email@email.com.br" required>
+
+        <label for="name">Data de Nascimento</label>
+        <input type="date" ng-model="userInfo.nascimento" placeholder="01/01/2001" required>
+
+        <label for="name">CPF</label>
+        <input type="text" ng-model="userInfo.cpf" placeholder="999.999.999-99" required>
+
+        <label for="name">Telefone</label>
+        <input type="tel" ng-model="userInfo.telefone" placeholder="(99)99999-9999" required>
+
+        <button ng-click="send()">Enviar</button>
+    </form>
+
+    <div class="log">
+        <pre>Informações Inseridas = {{userInfo | json}}</pre>
+    </div>
+</div>
