@@ -22,7 +22,7 @@ var app = angular.module('wooza', ['ngRoute']).config(
                 controller: 'wifiProdutos',
                 controllerAs: 'vm'
             })
-            .when('/formulario', {
+            .when('/formulario/:id', {
                 templateUrl: './components/formulario/formulario.component.html',
                 controller: 'formUser',
                 controllerAs: 'vm'
