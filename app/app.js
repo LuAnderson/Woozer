@@ -11,7 +11,7 @@ var app = angular
                     controllerAs: 'vm'
                 })
                 .when('/TBT01', {
-                    templateUrl: './components/card-tablet/card-tablet.component.html',
+                    templateUrl: './components/card-produtos/card-produtos.component.html',
                     controller: 'tabletProdutos',
                     controllerAs: 'vm'
                 })
@@ -67,8 +67,11 @@ app.controller("wifiProdutos", function ($scope, Wifi) {
 });
 
 app.controller('formUser', function ($scope) {
+    let easterEgg = document.getElementById("easter-egg");
+
     $scope.sendForm = function () {
         console.log("$scope.userInfo: ", $scope.userInfo);
+        easterEgg.classList.add("show");
     };
 });
 

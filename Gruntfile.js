@@ -10,7 +10,7 @@ module.exports = function (grunt) {
                     optimization: 2
                 },
                 files: {
-                    "dist/main.css": "app/component.less"
+                    "dist/main.css": "app/*.less"
                 }
             }
         },
