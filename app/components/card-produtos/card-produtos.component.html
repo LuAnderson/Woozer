@@ -10,8 +10,8 @@
 <section class="cardProdutos">
     <div class="produto" ng-repeat="produto in produtos.planos">
         <a ng-href="#!formulario/{{produto.sku}}">
-            <p class="informacao">{{ produto.valor }}</p>
-            <p class="informacao">{{ produto.franquia }}</p>
+            <p class="informacao">Valor R${{ produto.valor }}</p>
+            <p class="informacao">Pacote com {{ produto.franquia }}</p>
             <button>
                 Comprar
             </button>
