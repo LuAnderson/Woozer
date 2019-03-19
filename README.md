@@ -40,26 +40,31 @@ After the requirements are installed, run the following command | Após a instal
 1.1.1 - /card-produtos
 1.1.1.1 - card-produtos.component.html
 1.1.1.2 - card-produtos.component.less
+1.1.1.4 - card-produtosController.js
 1.1.2 - /formulario
 1.1.2.1 - formulario.component.html
 1.1.2.2 - formulario.component.less
+1.1.2.3 - formularioController.js
 1.1.3 - /planos
 1.1.3.1 - planos.component.html
 1.1.3.2 - planos.component.less
+1.1.3.3 - planosController.js
 1.2 - /lib
 1.2.1 - /angular
 1.2.2 - /angular-route
 1.3 - app.js
 1.4 - app.less
 1.5 - component.less
-1.6 - index.html
-1.7 - reset.css
+1.6 - favicon.ico
+1.7 - index.html
+1.8 - reset.css
 2 - /dist
 2.1 - main.css
 3 - gitignore
-4 - Gruntfile.js
-5 - package-lock.json
-6 - Readme.md
+4 - consideration.txt
+5 - Gruntfile.js
+6 - package-lock.json
+7 - Readme.md
 ```
 
 -------------
