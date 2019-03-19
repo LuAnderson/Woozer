@@ -33,9 +33,10 @@ After the requirements are installed, run the following command | Após a instal
 
 -------------
 ### Project Tree | Árvore do Projeto 
-.Woozer
+```doc
+./Woozer
 1 - /app
-1.1 - /components
+1.1 - /component
 1.1.1 - /card-produtos
 1.1.1.1 - card-produtos.component.html
 1.1.1.2 - card-produtos.component.less
@@ -59,6 +60,7 @@ After the requirements are installed, run the following command | Após a instal
 4 - Gruntfile.js
 5 - package-lock.json
 6 - Readme.md
+```
 
 -------------
 ### Contact | Contato
