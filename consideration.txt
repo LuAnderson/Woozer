@@ -1,0 +1,23 @@
+Olá, Lucas Anderson falando aqui;
+Primeiramente gostaria de agradecer a oportunidade de estar participando do processo seletivo, é muito gratificante a possibilidade de trabalhar na Wooza; empresa qual já admiro de longa data.
+Enfim, não vim puxar o saco; vim apenas dar a minha visão do desafio e apontar melhorias que não implementei.
+
+- Divisão dos controllers
+Atualmente se encontram todos em um unico arquivo; a separação torna o código mais compreensivel e de baixo custo de manunteção.
+
+- Não me apeguei muito na estilização/visual dos componentes da aplicação em si.
+Vejo como sendo algo cuja eu possa melhorar, porém me atentei mais as funcionalidades.
+
+- Melhor utilização das informações retornadas pelo JSON.
+Exemplo: os booleanos, podendo atribuir uma caracterica, comportamento especial pendente o valor retornado.
+
+- Aplicação de teste.
+Apesar da implementação da factory visualizar algumas situações de uso a utilização de teste na conexão e principalmente no retorno das informações seria conveniente.
+
+*Obs.: Porque não utilizei padrão dos estilos nas classes CSS ? Por serem componentes simples, acredito que a vantagem da utilização de tais padrões se perde;
+nomes simples e objetivos são mais transparentes.
+
+Enfim, somente isso que eu queria falar, pois eu tenho ciencia de que isso deveria ter sido aplicado e vá ser avaliado;
+tenho o conhecimento que precisaria, porém não muito tempo atualmente para desenvolver já que estou trabalhando em outra empresa tempo integral.
+
+Abraço, novamente obrigado !
