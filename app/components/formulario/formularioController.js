@@ -1,3 +1,5 @@
+'use strict';
+
 app.controller('formUser', function ($scope) {
     let easterEgg = document.getElementById("easter-egg");
 

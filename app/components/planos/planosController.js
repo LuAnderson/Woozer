@@ -1,3 +1,5 @@
+'use strict';
+
 app.controller("computadorProdutos", function ($scope, Computador) {
     $scope.produto = {};
 
