@@ -59,7 +59,7 @@ app.factory('Wifi', function ($http) {
 
                 $http({
                     method: 'GET',
-                    url: 'http://private-59658d-celulardireto2017.apiary-mock.com/planos/CPT02'
+                    url: 'http://private-59658d-celulardireto2017.apiary-mock.com/planos/WF03'
                 }).then(function (data) {
                     obj.saveWifi(data);
                     callback(data);
